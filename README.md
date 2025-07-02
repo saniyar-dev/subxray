@@ -78,7 +78,7 @@ This is the easiest way. No need to install Python or any dependencies.
     ```
 4.  Follow steps 4 and 5 from Option 1, but run the script using `python`:
     ```bash
-    python fetch_and_parse.py "YOUR_SUBSCRIPTION_URL"
+    python main.py "YOUR_SUBSCRIPTION_URL"
     ```
 
 ## Use Cases
