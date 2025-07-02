@@ -1,3 +1,4 @@
 main.spec
 build
 __pycache__
+.env

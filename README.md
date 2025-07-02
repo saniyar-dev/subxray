@@ -69,7 +69,7 @@ This is the easiest way. No need to install Python or any dependencies.
 1.  Make sure you have Python 3.6+ installed.
 2.  Clone this repository:
     ```bash
-    git clone [https://github.com/saniyar-dev/subxray.git](https://github.com/saniyar-dev/subxray.git)
+    git clone https://github.com/saniyar-dev/subxray.git
     cd subxray
     ```
 3.  Install the required dependency:
