@@ -1,0 +1,41 @@
+{
+  "routing": {
+    "domainStrategy": "AsIs",
+    "domainMatcher": "hybrid",
+    "rules": [
+      {
+        "ruleTag": "leastPing",
+        "inboundTag": [
+          "http",
+          "socks"
+        ],
+        "balancerTag": "leastPing"
+      }
+    ],
+    "balancers": [
+      {
+        "tag": "leastPing",
+        "selector": [
+          "outbound"
+        ],
+        "fallbackTag": "direct",
+        "strategy": {
+          "type": "leastPing",
+          "settings": {}
+        }
+      }
+    ]
+  },
+  "burstObservatory": {
+    "subjectSelector": [
+      "outbound"
+    ],
+    "pingConfig": {
+      "destination": "https://go.dev/generate_204",
+      "connectivity": "",
+      "interval": "10s",
+      "sampling": 3,
+      "timeout": "30s"
+    }
+  }
+}
